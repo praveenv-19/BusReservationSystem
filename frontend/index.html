@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BusGo</h1>
+        <p>Bus Reservation System</p>
+    </header>
+
+    <main>
+        <section class="search-box">
+            <h2>Find Your Bus</h2>
+
+            <form id="searchForm">
+                <label for="source">From</label>
+                <input id="source" type="text"
+                       placeholder="e.g. Pune" required>
+
+                <label for="destination">To</label>
+                <input id="destination" type="text"
+                       placeholder="e.g. Mumbai" required>
+
+                <button type="submit">Search Buses</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Available Buses</h2>
+            <div id="busList">Loading buses...</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
