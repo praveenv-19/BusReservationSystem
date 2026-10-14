@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Reservation System</title>
+    <title>BusGo - Bus Reservation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +20,32 @@
 
             <form id="searchForm">
                 <label for="source">From</label>
-                <input id="source" type="text"
-                       placeholder="e.g. Pune" required>
+                <input
+                    id="source"
+                    type="text"
+                    placeholder="e.g. Pune"
+                    required
+                >
 
                 <label for="destination">To</label>
-                <input id="destination" type="text"
-                       placeholder="e.g. Mumbai" required>
+                <input
+                    id="destination"
+                    type="text"
+                    placeholder="e.g. Mumbai"
+                    required
+                >
+
+                <label for="travelDate">Journey Date</label>
+                <input
+                    id="travelDate"
+                    type="date"
+                    required
+                >
 
                 <button type="submit">Search Buses</button>
+                <button type="button" id="showAllBuses">
+                    Show All Buses
+                </button>
             </form>
         </section>
 
