@@ -4,43 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BusGo - Bus Reservation System</title>
+    <title>Bus Reservation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>BusGo</h1>
-        <p>Bus Reservation System</p>
+        <h1>Bus Reservation System</h1>
+        <p>Search buses and choose your seat</p>
     </header>
 
     <main>
-        <section class="search-box">
-            <h2>Find Your Bus</h2>
+        <section class="search-section">
+            <h2>Search Buses</h2>
 
             <form id="searchForm">
-                <label for="source">From</label>
-                <input
-                    id="source"
-                    type="text"
-                    placeholder="e.g. Pune"
-                    required
-                >
+                <label>
+                    Source
+                    <input id="source" type="text"
+                        placeholder="e.g. Pune" required>
+                </label>
 
-                <label for="destination">To</label>
-                <input
-                    id="destination"
-                    type="text"
-                    placeholder="e.g. Mumbai"
-                    required
-                >
+                <label>
+                    Destination
+                    <input id="destination" type="text"
+                        placeholder="e.g. Mumbai" required>
+                </label>
 
-                <label for="travelDate">Journey Date</label>
-                <input
-                    id="travelDate"
-                    type="date"
-                    required
-                >
+                <label>
+                    Journey date
+                    <input id="travelDate" type="date" required>
+                </label>
 
                 <button type="submit">Search Buses</button>
                 <button type="button" id="showAllBuses">
@@ -51,9 +44,13 @@
 
         <section>
             <h2>Available Buses</h2>
-            <div id="busList">Loading buses...</div>
+            <div id="busList"></div>
         </section>
     </main>
+
+    <footer>
+        <p>Bus Reservation System | DBMS Project</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
